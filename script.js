@@ -1,4 +1,5 @@
-const API_BASE = ' https://hot-or-not-backend.onrender.com/api';
+const API_BASE = 'https://hot-or-not-backend.onrender.com/api'; 
+
 const personImg = document.getElementById('person-img');
 const personTitle = document.getElementById('person-title');
 
@@ -21,7 +22,7 @@ async function fetchImages() {
 
 function showPerson(index) {
   const p = people[index];
-  personImg.src = `http://localhost:3001${p.url}`;
+  personImg.src = `${API_BASE.replace('/api', '')}${p.url}`; 
   personTitle.innerText = `🔥 ${p.hot_votes} / ${p.total_votes} — Score: ${p.rating || 'N/A'}`;
 }
 
@@ -69,11 +70,13 @@ document.getElementById('fileInput').addEventListener('change', async function (
 });
 
 fetchImages();
+
 document.getElementById('themeToggle').addEventListener('click', () => {
   document.body.classList.toggle('dark');
   const isDark = document.body.classList.contains('dark');
   document.getElementById('themeToggle').textContent = isDark ? '☀️ Light Mode' : '🌙 Dark Mode';
 });
+
 
 
 
