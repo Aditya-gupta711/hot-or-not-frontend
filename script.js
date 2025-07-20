@@ -1,4 +1,4 @@
-const API_BASE = ' https://hot-or-not-backend.onrender.com';
+const API_BASE = ' https://hot-or-not-backend.onrender.com/api';
 const personImg = document.getElementById('person-img');
 const personTitle = document.getElementById('person-title');
 
