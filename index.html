@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>🔥 Hot or ❄️ Not</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="header">
+    <h1>🔥 Hot or ❄️ Not</h1>
+    <div class="header-buttons">
+      <button id="themeToggle">🌙 Dark Mode</button>
+      <button onclick="window.location.href='top5.html'">🏆 Leaderboard</button>
+    </div>
+  </header>
+
+  <div class="app">
+    <div class="card">
+      <img id="person-img" src="" alt="User Image" class="image"/>
+      <div class="score" id="person-title">Loading...</div>
+
+      <div class="vote-buttons">
+        <button onclick="vote('hot')">🔥 Hot</button>
+        <button onclick="vote('not')">❄️ Not</button>
+      </div>
+
+      <div class="upload-section">
+        <input type="file" id="fileInput" style="display: none;" />
+        <button onclick="document.getElementById('fileInput').click()">＋ Upload Image</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
+
