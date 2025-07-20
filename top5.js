@@ -1,4 +1,5 @@
-const API = 'http://localhost:3001/api/top5';
+const API = 'https://hot-or-not-backend.onrender.com/api/top5';
+
 
 async function loadTop5() {
   const res = await fetch(API);
