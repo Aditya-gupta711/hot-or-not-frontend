@@ -1,4 +1,4 @@
-const API_BASE = 'http://localhost:3001/api';
+const API_BASE = ' https://hot-or-not-backend.onrender.com';
 const personImg = document.getElementById('person-img');
 const personTitle = document.getElementById('person-title');
 
